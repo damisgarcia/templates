@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-sm-8">
+      <uib-carousel interval="visitant.carousel.interval" no-wrap="visitant.carousel.wrap">
+        <uib-slide ng-repeat="slide in visitant.carousel.slides" active="slide.active">
+          <img ng-src="{{slide.image}}" class="tm-img-full-width" style="margin:auto;">
+          <div class="carousel-caption">
+            <h4>Slide {{$index}}</h4>
+            <p>{{slide.text}}</p>
+          </div>
+        </uib-slide>
+      </uib-carousel>
+      <!-- <h2>What We Do</h2>
+      <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+      <p>
+          <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a>
+      </p> -->
+    </div>
+    <div class="col-sm-4">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><strong>Atendimento</strong></div>
+          <div class="panel-body text-center">
+            Mon – Fri: 10am – 8pm <br>
+            Sat – Sun: By Special Appointment <br>
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="thumbnail">
+          <p><img class="img-responsive" src="http://www.trbimg.com/img-5256ebab/turbine/la-me-ln-san-jose-state-university-gunman-2013-001/600/600x363"/></p>
+          <p class="text-center"><strong>Rua Lorem ipum, 345 - Lorem <br> Sala 1103, Torre B</strong></p>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- /.row -->
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-4" ng-repeat="service in visitant.services">
+        <img class="img-rounded img-responsive img-center" ng-src="{{service.image}}" alt="">
+        <h2>{{service.title}}</h2>
+        <p>{{service.desc}}</p>
+        <a href="#!" class="btn btn-success">CONTINUAR LENDO</a>
+    </div>
+</div>
+<!-- /.row -->
