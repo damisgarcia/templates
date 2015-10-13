@@ -1,8 +1,29 @@
+/*HEADER*/
+header{
+  background-color:#efefef;
+}
 /*Nav*/
 .tm-navbar{
   width:100%;
   z-index: 999;
   top:0 !important;
+}
+
+.navbar-brand img{
+  display:inline;
+  margin-top: -5px;
+}
+
+.tm-logo{
+  font-family: 'Satisfy', cursive;
+}
+
+.tm-logo img{
+  margin-top: -5px;
+}
+
+.navbar-brand{
+  font-family: 'Satisfy', cursive;
 }
 
 /*Subtitles*/
@@ -12,4 +33,9 @@
 
 .tm-sub-title-contact > i{
   font-size:1.4rem;
+}
+
+/*Helpers*/
+.tm-img-full-width{
+  width: 100% !important;
 }

@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-sm-8">      
+    <div class="col-sm-8">
       <uib-carousel interval="visitant.carousel.interval" no-wrap="visitant.carousel.wrap">
         <uib-slide ng-repeat="slide in visitant.carousel.slides" active="slide.active">
-          <img ng-src="{{slide.image}}" style="margin:auto;">
+          <img ng-src="{{slide.image}}" class="tm-img-full-width" style="margin:auto;">
           <div class="carousel-caption">
             <h4>Slide {{$index}}</h4>
             <p>{{slide.text}}</p>
@@ -17,12 +17,21 @@
       </p> -->
     </div>
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-heading text-center"><strong>Atendimento</strong></div>
-        <div class="panel-body text-center">
-          Mon – Fri: 10am – 8pm <br>
-          Sat – Sun: By Special Appointment <br>
-          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><strong>Atendimento</strong></div>
+          <div class="panel-body text-center">
+            Mon – Fri: 10am – 8pm <br>
+            Sat – Sun: By Special Appointment <br>
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="thumbnail">
+          <p><img class="img-responsive" src="http://www.trbimg.com/img-5256ebab/turbine/la-me-ln-san-jose-state-university-gunman-2013-001/600/600x363"/></p>
+          <p class="text-center"><strong>Rua Lorem ipum, 345 - Lorem <br> Sala 1103, Torre B</strong></p>
         </div>
       </div>
     </div>
@@ -32,20 +41,11 @@
 <hr>
 
 <div class="row">
-    <div class="col-sm-4">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-        <h2>Marketing Box #1</h2>
-        <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
-    </div>
-    <div class="col-sm-4">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-        <h2>Marketing Box #2</h2>
-        <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-    </div>
-    <div class="col-sm-4">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-        <h2>Marketing Box #3</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+    <div class="col-sm-4" ng-repeat="service in visitant.services">
+        <img class="img-rounded img-responsive img-center" ng-src="{{service.image}}" alt="">
+        <h2>{{service.title}}</h2>
+        <p>{{service.desc}}</p>
+        <a href="#!" class="btn btn-success">CONTINUAR LENDO</a>
     </div>
 </div>
 <!-- /.row -->
