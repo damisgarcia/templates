@@ -1,0 +1,15 @@
+/*Nav*/
+.tm-navbar{
+  width:100%;
+  z-index: 999;
+  top:0 !important;
+}
+
+/*Subtitles*/
+.tm-sub-title-contact{
+  font-size:1.8rem;
+}
+
+.tm-sub-title-contact > i{
+  font-size:1.4rem;
+}
